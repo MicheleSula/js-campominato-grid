@@ -62,19 +62,19 @@ playButton.addEventListener("click",
 
 // ******************* Funzioni **********************
 
-function createElement (tagType, classToAdd, secondClassToAdd) {
+function createElement (tagType, ...classesToAdd) {
     const newElement = document.createElement(tagType);
-    newElement.classList.add(classToAdd, secondClassToAdd);
+    newElement.classList.add(...classesToAdd);
     return newElement;
 }
 
-function addClassOnClick (className, classToAdd) {
+function addClassOnClick (className, ...classesToAdd) {
     const collectionOfItems = document.getElementsByClassName(className);
 
     for (let i = 0; i < collectionOfItems.length; i++) {
         const element = collectionOfItems[i];
         element.addEventListener("click", function() {
-            element.classList.add(classToAdd);
+            element.classList.add(...classesToAdd);
         });
     }
 }
