@@ -93,6 +93,12 @@ header {
 
 /* Classes added with javascript */
 
+.square-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .square-10 {
     width: calc(100% / 10);
     height: calc(100% / 10);
@@ -108,24 +114,29 @@ header {
 .square-7 {
     width: calc(100% / 7);
     height: calc(100% / 7);
-    border: 2px solid white;
+    border: 2px solid white;  
 }
 
 .grid-container {
-    width: 80%;
+    width: 60%;
     height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     padding: 20px 20px;
-    border-radius: 5px 5px;
-    background-color: lightskyblue;
+    border-radius: 10px 10px;
+    background-color: lightsalmon;
+    border: 3px outset saddlebrown;
 }
 
 .text-white {
     color: white;
     text-align: center;
     font-size: 25px;
+}
+
+.bg-color-brown {
+    background-color: burlywood;
 }
